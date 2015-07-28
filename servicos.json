@@ -1,0 +1,696 @@
+[
+	{
+		"idservico": 0,
+		"tipo":"Aplicação Móvel",
+		"tarefas": [
+			{
+				"descricao":"Design por Modelo de Página/Tela (OBRIGATÓRIO)",
+				"custoEquivalente":3,
+				"tempo":5
+			},
+			{
+				"descricao":"Redesign por Modelo de Página/Tela",
+				"custoEquivalente":5,
+				"tempo":7
+			},
+			{
+				"descricao":"Configuração",
+				"custoEquivalente":10,
+				"tempo":10
+			},
+			{
+				"descricao":"Cadastro e Manutenção (Tela ou Tabela) / Item",
+				"custoEquivalente":10,
+				"tempo":15
+			},
+			{
+				"descricao":"Consulta (Listagem/Tabela)",
+				"custoEquivalente":5,
+				"tempo":5
+			},
+			{
+				"descricao":"Mural / Avisos / Emails",
+				"custoEquivalente":12,
+				"tempo":15
+			},
+			{
+				"descricao":"Gráfico Analítico (em Dashboard)",
+				"custoEquivalente":4,
+				"tempo":5
+			},
+			{
+				"descricao":"Agrupamento / Armazenamento / Pastas",
+				"custoEquivalente":10,
+				"tempo":15
+			},
+			{
+				"descricao":"Armagenamento / Sincronização em Nuvem",
+				"custoEquivalente":20,
+				"tempo":15
+			},
+			{
+				"descricao":"Uso de Dados Externos (Disponíveis)",
+				"custoEquivalente":5,
+				"tempo":10
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 1,
+		"tipo":"Marca + Manual de Identidade Visual",
+		"tarefas": [
+			{
+				"descricao":"Marca + Manual de Identidade Visual (OBRIGATÓRIO)",
+				"custoEquivalente":40,
+				"tempo":60
+			},
+			{
+				"descricao":"Aplicações: Cartão de Visita",
+				"custoEquivalente":1.5,
+				"tempo":5
+			},
+			{
+				"descricao":"Aplicações: Papel Timbrado",
+				"custoEquivalente":1.5,
+				"tempo":5
+			},
+			{
+				"descricao":"Aplicações: Envelope 11 x 22 (Formato DL)",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: Envelope 22 x 33 (Formato C4)",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: Pasta Aberta",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: DVD: Capa / Contracapa / Rótulo",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: Camisa Frente/Verso",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: Macacão/Corpo Inteiro",
+				"custoEquivalente":2,
+				"tempo":8
+			},
+			{
+				"descricao":"Aplicações: Adesivos",
+				"custoEquivalente":1,
+				"tempo":5
+			},
+			{
+				"descricao":"Aplicações: Veículo: Carro",
+				"custoEquivalente":2,
+				"tempo":10
+			},
+			{
+				"descricao":"Aplicações: Veículo: Furgão",
+				"custoEquivalente":2,
+				"tempo":10
+			},
+			{
+				"descricao":"Intermediação com a Gráfica",
+				"custoEquivalente":2,
+				"tempo":3
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 2,
+		"tipo":"Design de Embalagem",
+		"tarefas": [
+			{
+				"descricao":"Design por Face",
+				"custoEquivalente":30,
+				"tempo":25
+			},
+			{
+				"descricao":"Redesign por Face",
+				"custoEquivalente":35,
+				"tempo":30
+			},
+			{
+				"descricao":"Protótipo Impresso",
+				"custoEquivalente":25,
+				"tempo":50
+			},
+			{
+				"descricao":"Maquete Eletrônica",
+				"custoEquivalente":30,
+				"tempo":30
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Envólucro",
+				"custoEquivalente":10,
+				"tempo":20
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Envólucro",
+				"custoEquivalente":20,
+				"tempo":25
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Envólucro",
+				"custoEquivalente":30,
+				"tempo":35
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 3,
+		"tipo":"Design de Ponto-de-Venda (PDV)",
+		"tarefas": [
+			{
+				"descricao":"Design do Layout (OBRIGATÓRIO) por peça",
+				"custoEquivalente":50,
+				"tempo":25
+			},
+			{
+				"descricao":"Redesign do Layout por peça",
+				"custoEquivalente":70,
+				"tempo":45
+			},
+			{
+				"descricao":"Protótipo por peça",
+				"custoEquivalente":35,
+				"tempo":40
+			},
+			{
+				"descricao":"Maquete Eletrônica por peça",
+				"custoEquivalente":30,
+				"tempo":25
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Materiais",
+				"custoEquivalente":10,
+				"tempo":20
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Materiais",
+				"custoEquivalente":20,
+				"tempo":30
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Materiais",
+				"custoEquivalente":30,
+				"tempo":50
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 4,
+		"tipo":"Design de Exposição",
+		"tarefas": [
+			{
+				"descricao":"Design do Layout (OBRIGATÓRIO)",
+				"custoEquivalente":60,
+				"tempo":35
+			},
+			{
+				"descricao":"Maquele Eletrônica",
+				"custoEquivalente":40,
+				"tempo":35
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Materiais",
+				"custoEquivalente":10,
+				"tempo":20
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Materiais",
+				"custoEquivalente":20,
+				"tempo":30
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Materiais",
+				"custoEquivalente":40,
+				"tempo":50
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 5,
+		"tipo":"Projeto de Sinalização",
+		"tarefas": [
+			{
+				"descricao":"Projeto por Layout de tipo de peça (OBRIGATÓRIO)",
+				"custoEquivalente":2,
+				"tempo":5
+			},
+			{
+				"descricao":"Protótipo por Peça",
+				"custoEquivalente":3,
+				"tempo":10
+			},
+			{
+				"descricao":"Maquete Eletrônica por Layout de tipo de peça",
+				"custoEquivalente":2,
+				"tempo":7
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Materiais",
+				"custoEquivalente":10,
+				"tempo":20
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Materiais",
+				"custoEquivalente":20,
+				"tempo":30
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Materiais",
+				"custoEquivalente":30,
+				"tempo":50
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 6,
+		"tipo":"Site Corporativo",
+		"tarefas": [
+			{
+				"descricao":"Registro/Manutenção de Domínio (Anual)",
+				"custoEquivalente":2,
+				"tempo":2
+			},
+			{
+				"descricao":"Hospedagem (Anual)",
+				"custoEquivalente":2,
+				"tempo":0
+			},
+			{
+				"descricao":"Atualização de conteúdo (mensal)",
+				"custoEquivalente":12,
+				"tempo":0
+			},
+			{
+				"descricao":"Atualização de conteúdo (anual)",
+				"custoEquivalente":120,
+				"tempo":0
+			},
+			{
+				"descricao":"Design por Modelo de Página / Tela",
+				"custoEquivalente":3,
+				"tempo":5
+			},
+			{
+				"descricao":"Redesign por Modelo de Página / Tela",
+				"custoEquivalente":5,
+				"tempo":5
+			},
+			{
+				"descricao":"Canal Externo",
+				"custoEquivalente":8,
+				"tempo":10
+			},
+			{
+				"descricao":"Gestão de Textos c/Imagens",
+				"custoEquivalente":20,
+				"tempo":20
+			},
+			{
+				"descricao":"Slide de Imagens Rotuladas",
+				"custoEquivalente":8,
+				"tempo":10
+			},
+			{
+				"descricao":"Formulário Simples",
+				"custoEquivalente":6,
+				"tempo":10
+			},
+			{
+				"descricao":"Formulário Extendido",
+				"custoEquivalente":8,
+				"tempo":15
+			},
+			{
+				"descricao":"Descritivo de Time",
+				"custoEquivalente":15,
+				"tempo":20
+			},
+			{
+				"descricao":"Catálogo / Portifólio",
+				"custoEquivalente":30,
+				"tempo":10
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 7,
+		"tipo":"Sistema WEB",
+		"tarefas": [
+			{
+				"descricao":"Design por Modelo de Página / Tela",
+				"custoEquivalente":2,
+				"tempo":5
+			},
+			{
+				"descricao":"Gestão Integrada (ERP)",
+				"custoEquivalente":100,
+				"tempo":180
+			},
+			{
+				"descricao":"Comércio Eletrônico (Magento - PrestaShop - OpenCart - WHMCS)",
+				"custoEquivalente":40,
+				"tempo":50
+			},
+			{
+				"descricao":"Gestão de Blog / Fotoblog / Videoblog",
+				"custoEquivalente":20,
+				"tempo":25
+			},
+			{
+				"descricao":"Gestão de Projetos",
+				"custoEquivalente":30,
+				"tempo":40
+			},
+			{
+				"descricao":"Gestão de Relacionamento com o Cliente (CRM)",
+				"custoEquivalente":30,
+				"tempo":40
+			},
+			{
+				"descricao":"Gestão de Cursos Online (Moodle - eFront - Chamilo)",
+				"custoEquivalente":60,
+				"tempo":100
+			},
+			{
+				"descricao":"Gestão de Congressos / Eventos",
+				"custoEquivalente":50,
+				"tempo":80
+			},
+			{
+				"descricao":"Gestão de Serviços",
+				"custoEquivalente":30,
+				"tempo":40
+			},
+			{
+				"descricao":"Gestão de Fórum de Discussão",
+				"custoEquivalente":15,
+				"tempo":25
+			},
+			{
+				"descricao":"Gestão de Wiki",
+				"custoEquivalente":15,
+				"tempo":25
+			}
+		]
+	},
+	{
+		"idservico": 8,
+		"tipo":"Criação/Tratamento de Imagem",
+		"tarefas": [
+			{
+				"descricao":"Criação de Imagem Publicitária - Cada",
+				"custoEquivalente":5,
+				"tempo":10
+			},
+			{
+				"descricao":"Tratamento de Imagens (cada 10)",
+				"custoEquivalente":3,
+				"tempo":5
+			},
+			{
+				"descricao":"Fotografia da Composição - Cada",
+				"custoEquivalente":5,
+				"tempo":10
+			},
+			{
+				"descricao":"Ilustração da Composição - Cada",
+				"custoEquivalente":5,
+				"tempo":10
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":5,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 9,
+		"tipo":"Arquitetura de Marcas",
+		"tarefas": [
+			{
+				"descricao":"Manual de Integração de Marcas (cada 3 marcas)",
+				"custoEquivalente":45,
+				"tempo":75
+			},
+			{
+				"descricao":"Levantamento e Análise de Mercado (OBRIGATÓRIO)",
+				"custoEquivalente":55,
+				"tempo":90
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":1,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 10,
+		"tipo":"Design Editorial",
+		"tarefas": [
+			{
+				"descricao":"Capa / Cartaz / Outdoor / Propaganda",
+				"custoEquivalente":20,
+				"tempo":25
+			},
+			{
+				"descricao":"Capa / Cartaz / Outdoor / Propaganda em Série (Cada)",
+				"custoEquivalente":12,
+				"tempo":20
+			},
+			{
+				"descricao":"Diagramação (por Página)",
+				"custoEquivalente":0.2,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Ilustração Externa (Cada)",
+				"custoEquivalente":2,
+				"tempo":10
+			},
+			{
+				"descricao":"Ilustração Interna (Cada)",
+				"custoEquivalente":1,
+				"tempo":5
+			},
+			{
+				"descricao":"Fotografia para Propaganda (Cada)",
+				"custoEquivalente":4,
+				"tempo":3
+			},
+			{
+				"descricao":"Fotografia para Catálogo (Cada)",
+				"custoEquivalente":2,
+				"tempo":1
+			},
+			{
+				"descricao":"Maquiagem para Propaganda (Cada maquiagem de cada pessoa)",
+				"custoEquivalente":2.5,
+				"tempo":1
+			},
+			{
+				"descricao":"Maquiagem para Catálogo (Cada maquiagem de cada pessoa)",
+				"custoEquivalente":1.5,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Estilista para Propaganda (Cada combinação de cada pessoa)",
+				"custoEquivalente":2,
+				"tempo":3
+			},
+			{
+				"descricao":"Estilista para Catálogo (Cada combinação de cada pessoa)",
+				"custoEquivalente":1,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Impressão de Prova (cada 50 páginas)",
+				"custoEquivalente":1,
+				"tempo":1
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Materiais",
+				"custoEquivalente":5,
+				"tempo":5
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Materiais",
+				"custoEquivalente":10,
+				"tempo":7
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Materiais",
+				"custoEquivalente":15,
+				"tempo":10
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":1,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 11,
+		"tipo":"Design Promocional",
+		"tarefas": [
+			{
+				"descricao":"Design por Peça",
+				"custoEquivalente":10,
+				"tempo":5
+			},
+			{
+				"descricao":"Impressão de Prova",
+				"custoEquivalente":2,
+				"tempo":2
+			},
+			{
+				"descricao":"Fornecedor Externo Local de Materiais",
+				"custoEquivalente":10,
+				"tempo":20
+			},
+			{
+				"descricao":"Fornecedor Externo Interestadual de Materiais",
+				"custoEquivalente":20,
+				"tempo":30
+			},
+			{
+				"descricao":"Fornecedor Externo Internacional de Materiais",
+				"custoEquivalente":30,
+				"tempo":50
+			},
+			{
+				"descricao":"Redução de Prazo - 1 dia",
+				"custoEquivalente":1,
+				"tempo":-5
+			}
+		]
+	},
+	{
+		"idservico": 12,
+		"tipo":"Consultoria em Tecnologia de Informação",
+		"tarefas": [
+			{
+				"descricao":"Projeto de Implantação de GED (Documentos)",
+				"custoEquivalente":120,
+				"tempo":180
+			},
+			{
+				"descricao":"Rastreamento de Implantação de Computação em Nuvem",
+				"custoEquivalente":60,
+				"tempo":70
+			},
+			{
+				"descricao":"Tecnologias para Aumento de Produtividade - Backend",
+				"custoEquivalente":60,
+				"tempo":40
+			},
+			{
+				"descricao":"Tecnologias de Informação para Inovação - Frontend",
+				"custoEquivalente":70,
+				"tempo":40
+			},
+			{
+				"descricao":"Projeto de Gestão de Segurança da Informação",
+				"custoEquivalente":120,
+				"tempo":180
+			}
+		]
+	},
+	{
+		"idservico": 13,
+		"tipo":"Digitação - Consulta - Impressão - Escaneamento",
+		"tarefas": [
+			{
+				"descricao":"Digitação (por página)",
+				"custoEquivalente":0.035,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Criação de Layout (cartões / cartazes etc)",
+				"custoEquivalente":0.5,
+				"tempo":5
+			},
+			{
+				"descricao":"Impressão Preto / Papel Comum (por página)",
+				"custoEquivalente":0.02,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Impressão Preto / Papel Especial (por página)",
+				"custoEquivalente":0.035,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Impressão Colorido / Papel Comum (por página)",
+				"custoEquivalente":0.035,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Impressão Colorido / Papel Especial (por página)",
+				"custoEquivalente":0.045,
+				"tempo":0.5
+			},
+			{
+				"descricao":"Consulta na Internet (por Documento)",
+				"custoEquivalente":0.035,
+				"tempo":0.75
+			},
+			{
+				"descricao":"Escaneamento (por escaneamento)",
+				"custoEquivalente":0.035,
+				"tempo":0.75
+			}
+		]
+	}
+]

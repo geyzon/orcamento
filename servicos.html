@@ -1,0 +1,117 @@
+<div class="container" role="main">
+		<h3 class="panel-heading"><b>Orçamento</b> - SWCORP Design Office</h3>
+		<!-- Serviços oferecidos -->
+		<div class="servicos panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title"><b>Serviço a Requisitar:</b></h3>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+						<select class="form-control" ng-model="idserv">
+							<option ng-repeat="servico in servicos" value="{{$index}}">{{servico.tipo}}</option>
+						</select>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<checked-directive ng-click="addServico(idserv)" ng-if="idserv"></checked-directive>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Serviços requisitados -->
+		<div class="panel panel-success" ng-repeat="(idreq, requisitado) in requisitados"> 	
+			<div class="panel-heading">
+				<div class="col-xs-11 col-sm-11 col-md-11 col-lg-11">
+					<h3 class="panel-title">
+						Serviço: <b>{{requisitado.tipo}}</b>
+					</h3>
+				</div>
+				<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+					<close-directive ng-click="delServico(idreq)"></close-directive>
+				</div>
+			</div>
+			<div class="servicos panel-body">
+				<div class="row">
+					<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+						<select class="form-control" ng-model="tarefa" ng-options="tarefa.descricao for tarefa in servicos[requisitado.idservico].tarefas" ng-click="tarefa.quantidade = 1">
+							<option value="{{tarefa.descricao}}">{{tarefa.descricao}}</option>
+						</select>
+						{{tabela.$index}}
+						<select class="form-control" ng-model="tarefa" ng-options="tarefa.tempo for tarefa in servicos[requisitado.idservico].tarefas" ng-hide="true">
+							<option value="{{tarefa.tempo}}"></option>
+						</select>
+					</div>
+					<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+						<input type="text" class="form-control" ng-model="tarefa.quantidade"></input>
+					</div>
+					<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+						<checked-directive ng-click="addTarefa(idreq, tarefa)" ng-if="tarefa.descricao"></checked-directive>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Tarefas inclusas no serviço requisitado -->
+			<div class="panel-body" ng-if="requisitado.tarefas.length > 0">
+				<div class="row">
+					<table class="table table-striped">
+						<thead>
+							<th class="col-xs-7 col-sm-7 col-md-7 col-lg-7">Tarefas do Serviço</th>
+							<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Quantidade</th>
+							<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1">Dias</th>
+							<th class="col-xs-2 col-sm-2 col-md-2 col-lg-2 text-right">Valor</th>
+							<th class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></th>
+						</thead>
+						<tbody>
+							<tr ng-repeat="(idtarefa, tarefaDoServico) in requisitado.tarefas">
+								<td>{{tarefaDoServico.descricao}}</td>
+								<td class="text-center">
+									<input type="text" class="form-control" ng-model="tarefaDoServico.quantidade" ng-change="atualizaTotal()"></input>
+								</td>
+								<td class="text-center">
+									{{((tarefaDoServico.tempo * tarefaDoServico.quantidade) / horasdia) | number:0}}
+								</td>
+								<td class="text-right">
+									{{(tarefaDoServico.custoEquivalente * tarefaDoServico.quantidade * valorPF) | currency:"R$ "}}
+									</td>
+								<td class="text-center">
+									<close-directive ng-click="delTarefa(idreq, idtarefa)" ng-show="tarefa"></close-directive>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="row text-right" ng-if="tempoTotal > 0" style="padding: 10px 10px 0 0">
+					Parcial: <b>{{(valorDoServico($index) * valorPF) | currency:"R$ "}}</b><br/>
+					Tempo: <b>{{(tempoDoServico($index) / horasdia) | number:0}} dias Úteis</b>
+				</div>
+			</div>
+		</div>
+		
+		<div class="text-right" ng-if="valorTotal > 0">
+			<h4>Valor dos Serviços: <b>{{arredonda(valorTotal - 0.5) | currency:"R$ "}}</b> | Tempo Total: Até <b>{{(tempoTotal / horasdia) | number:0}} dias Úteis</b></h4>
+		</div>
+		<div class="panel panel-success text-left animated bounceIn" ng-if="valorTotal > 0">
+			<div class="panel-heading">
+				<h3 class="panel-title"><b>Forma de Pagamento:</b></h3>
+			</div>
+			<div class="panel-body">
+				<h4>
+					- À Vista, com 10% de desconto: <b>R$ {{(arredonda(valorTotal)*0.9) | number:2}}</b>: Pagamento no Ato da Assinatura do Contrato;
+				</h4>
+				OU
+				<h4>
+					- 2 parcelas de <b>R$ {{(arredonda(valorTotal)/2) | number:2}}</b>: 1ª - no Ato da Assinatura do Contrato e 2ª - na entrega do serviço;<br/>
+				</h4>
+				OU
+				<h4>
+					- Parcelado (PagSeguroUOL / PayPal): ~ (<b>{{arredonda(valorTotal * 1.15) | currency:"R$ "}}</b>)<br/>
+					<span ng-if="((valorTotal * 1.15) / 3) >= parcelaMinima"><b>03 x {{arredonda((valorTotal * 1.15) / 3) | currency:"R$ "}}</b></span>
+					<span ng-if="((valorTotal * 1.15) / 4) >= parcelaMinima">ou<br/><b>04 x {{arredonda((valorTotal * 1.15) / 4) | currency:"R$ "}}</b></span>
+					<span ng-if="((valorTotal * 1.15) / 5) >= parcelaMinima">ou<br/><b>05 x {{arredonda((valorTotal * 1.15) / 5) | currency:"R$ "}}</b></span>
+					<span ng-if="((valorTotal * 1.15) / 6) >= parcelaMinima">ou<br/><b>06 x {{arredonda((valorTotal * 1.15) / 6) | currency:"R$ "}}</b></span>
+					<span ng-if="((valorTotal * 1.15) / 7) >= parcelaMinima">ou<br/><b>07 x {{arredonda((valorTotal * 1.15) / 7) | currency:"R$ "}}</b></span>
+					<span ng-if="((valorTotal * 1.15) / 8) >= parcelaMinima">ou<br/><b>08 x {{arredonda((valorTotal * 1.15) / 8) | currency:"R$ "}}</b></span>
+				</h4>
+			</div>
+		</div>
+</div>
